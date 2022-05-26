@@ -13,7 +13,7 @@ class CreateProductGalleriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('products_galleries', function (Blueprint $table) {
+        Schema::create('product_galleries', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('products_id');
             $table->string('url');

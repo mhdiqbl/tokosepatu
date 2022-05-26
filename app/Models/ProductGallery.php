@@ -20,4 +20,9 @@ class ProductGallery extends Model
     {
         return config('app.url') . Storage::url($url);
     }
+
+    public function product()
+    {
+        return $this->hasMany(ProductGallery::class, 'product_id', 'id');
+    }
 }

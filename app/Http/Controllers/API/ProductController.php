@@ -60,7 +60,7 @@ class ProductController extends Controller
         }
 
         if ($categories) {
-            $product->where('price', $categories);
+            $product->where('categories', $categories);
         }
         return ResponseFormatter::success(
             $product->paginate($limit),

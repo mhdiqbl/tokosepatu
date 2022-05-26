@@ -13,7 +13,7 @@ class CreateTransactionItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transaction_item', function (Blueprint $table) {
+        Schema::create('transaction_items', function (Blueprint $table) {
             $table->id();
 
             $table->bigInteger('users_id');
